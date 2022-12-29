@@ -13,9 +13,10 @@ class Property(models.Model):
   location = models.CharField(max_length=255)
   rooms = models.IntegerField()
   rent = models.IntegerField()
-  category = models.CharField(choices=CATEGORIES, default=CATEGORIES[0], max_length=200)
+  category = models.CharField(choices=CATEGORIES, default=CATEGORIES[1], max_length=200)
   facilities = models.TextField()
   more_info = models.TextField()
+  contacts = models.CharField(blank=True,max_length=200)
 
   class Meta:
     ordering = ['description']
