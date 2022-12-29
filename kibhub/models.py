@@ -19,4 +19,4 @@ class Property(models.Model):
   contacts = models.CharField(blank=True,max_length=200)
 
   class Meta:
-    ordering = ['description']
+    ordering = ['id']
