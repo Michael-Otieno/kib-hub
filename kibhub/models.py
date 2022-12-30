@@ -20,3 +20,7 @@ class Property(models.Model):
 
   class Meta:
     ordering = ['id']
+
+class PropertyImage(models.Model):
+  property_link = models.ForeignKey(Property,on_delete=models.CASCADE,related_name='images')
+  image = models.ImageField(upload_to='img',default="",null=True,blank=True) 
