@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'django_filters',
+    # 'drf_yasg',
 
 
     'kibhub',
@@ -82,8 +83,12 @@ WSGI_APPLICATION = 'configurations.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'kib', 
+        'USER': 'mike',
+        'PASSWORD': 'abc123',
+        'HOST': '127.0.0.1', 
+        'PORT': '5432',
     }
 }
 
@@ -132,3 +137,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 REST_FRAMEWORK = {
     'PAGE_SIZE':10
 }
+
+AUTH_USER_MODEL = 'kibhub.User'
