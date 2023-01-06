@@ -6,8 +6,7 @@ Django restframework API for house and offices listing
 ## Features
 - Register,Login, and Logout a user
 - Get all list of registered user
-- Get all list of land owners and also be able to perform CRUD on land owners
-- Get all list of land information and also perform CRUD on land information
+- Get all list of properties and perform CRUD on properties
 
 ## Requirements
 
