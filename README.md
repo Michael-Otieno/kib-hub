@@ -47,7 +47,7 @@ python3 manage.py runserver
 
 
 ## Use
-- We can use [Postman](https://www.postman.com/) 
+- Use [Postman](https://www.postman.com/) for testing
  
 
 ## Contact Information
