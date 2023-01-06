@@ -18,7 +18,7 @@ Django restframework API for house and offices listing
 ## Set up and Installation
 - Clone the repository
 ```bash
-git clone https://github.com/Michael-Otieno/django-api/
+git clone https://github.com/Michael-Otieno/kib-hub/
 ```
  - Create and activate virtual environment
  ```bash
@@ -45,7 +45,6 @@ python3 manage.py runserver
 | `properties/:id` | PUT | UPDATE |Update property information |
 | `properties/:id` | DELETE  | DELETE |Delete property |
 
-```
 
 ## Use
 - We can use [Postman](https://www.postman.com/) 
